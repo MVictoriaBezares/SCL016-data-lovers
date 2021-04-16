@@ -1,7 +1,6 @@
 body {
   background-image: url("./imagen/imagen_fondo.jpg"); 
 }
-
 footer {
   background-color:#373736;
   padding: 15px;
@@ -10,27 +9,24 @@ footer {
   width: 100%;
   color: white;
 }
-
 .logo {
   width: 700px;
   display: block;
   height: 160.35px;
   margin: 80px auto;
 }
-
 .bar {
   background: #373736;
   display: flex; 
   justify-content: space-between;
   padding: 15px;
 }
-
 button {
   position: relative;
   border-radius: 12px;
   background-color: #4BA7AC;
+  color: #ffffff;
 }
-
 .links {
   display: flex;
   align-items: center;
@@ -38,7 +34,6 @@ button {
   flex-direction: column;
   font-size: 12px;
 }
-
 .typChamp {
   display: flex; 
   justify-content: space-between;
