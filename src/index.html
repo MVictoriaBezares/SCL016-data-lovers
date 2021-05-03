@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="logo">
-      <img src="./Imagen/logo_lol.png" />
-    </header>
-    <nav>
-      <!-- la barra de navegacion -->
-      <section class="bar">
-        <input type="search" name="Buscar" placeholder="Buscar" />
-        <input type=""/>
-        <input type="button"/>
-      </section>
-    </nav>
-    <section class="typChamp">
-      <button class="Asesino"> ASESINOS</button>
-      <button class="Luchador"> LUCHADORES</button>
-      <button class="Mago"> MAGOS</button>
-      <button class="Tirador"> TIRADORES</button>
-      <button class="Soporte"> SOPORTES</button>
-      <button class="Tanque"> TANQUES</button>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Data Lovers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="logo">
+    <img src="./Imagen/logo_lol.png" />
+  </header>
+  <nav>
+    <!-- la barra de navegacion -->
+    <section class="navegation">
+      <input type="search" name="Buscar" placeholder="Busca tu campeon" class="buttons-nav" />
+      <select class="buttons-nav" name= "a-z" id="selectOrder">        <!--inv selectOrder-->
+        <option value="A-Z">Ordenar A-Z</option>
+        <option value="Z-A">Ordenar Z-A</option>
+        </select>
+      <input type="button" id= "reset" value="Mostrar Todo" class="buttons-nav" />
     </section>
-    <div id="root"></div>
-    <footer>
-      <div class="links">
-        ¿Quieres aprender a jugar?:
-        <a href="https://lan.leagueoflegends.com/es-mx/champions/"
-          >https://lan.leagueoflegends.com</a>
-        A jugar!
-        <a href="https://signup.lan.leagueoflegends.com/es/signup/index#/"
-          >https://lan.leagueoflegends.com/es</a>
-        -Derechos reservados Riot Games, League of Legends y PvP.net.-
-      </div>
-    </footer>
-    <script src="main.js" type="module"></script>
-  </body>
+  </nav>
+
+
+  <section class="typ-champ">
+    <button id="assassin"> ASESINOS </button>
+    <button id="fighter"> LUCHADORES</button>
+    <button id="mage"> MAGOS </button>
+    <button id="marksman"> TIRADORES </button>
+    <button id="support"> SOPORTES </button>
+    <button id="tank"> TANQUES </button>
+  </section>
+  
+  <div id="root"></div>
+
+  <footer>
+    <div class="links">
+      ¿Quieres aprender a jugar?:
+      <a href="https://lan.leagueoflegends.com/es-mx/champions/">https://lan.leagueoflegends.com</a>
+      A jugar!
+      <a href="https://signup.lan.leagueoflegends.com/es/signup/index#/">https://lan.leagueoflegends.com/es</a>
+      -Derechos reservados Riot Games, League of Legends y PvP.net.-
+    </div>
+  </footer>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
 </html>
